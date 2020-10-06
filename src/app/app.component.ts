@@ -10,9 +10,7 @@ export class AppComponent {
 
   languageList = [
     { code: 'en', label: 'English' },
-    { code: 'hi', label: 'हिंदी' },
-    { code: 'es', label: 'Espanol' }
-
+    { code: 'jp', label: '日本語' }
   ];
 
   constructor(@Inject(LOCALE_ID) protected localeId: string) { }
