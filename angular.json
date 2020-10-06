@@ -48,12 +48,23 @@
                 "maximumError": "5mb"
               }]
             },
-            "ja": {
+            "jp": {
               "aot": true,
-              "i18nFile": "src/translate/messages.ja.xlf",
+              "outputPath": "dist/jp/",
+              "i18nFile": "src/translate/messages.jp.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "ja",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
+              "baseHref": "/jp/"
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error",
+              "baseHref": "/en/"
             }
           }
         },
@@ -66,8 +77,8 @@
             "production": {
               "browserTarget": "i18nDemo:build:production"
             },
-            "ja": {
-              "browserTarget": "i18nDemo:build:ja"
+            "jp": {
+              "browserTarget": "i18nDemo:build:jp"
             }
           }
         },
